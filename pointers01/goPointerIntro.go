@@ -14,10 +14,10 @@ func main() {
 	// 2. Memory address
 	// When we create a variable, a memory address is allocated for the
 	// variable to store the value.
-	// A. The & operator, used 2get memory address of a variable.
+	// => The & operator, used 2get memory address of a variable.
 
-	// 3. How to access(Get) Value Pointed by Pointers in Go?
-	// B. The * operator, used 2access the value present in the memory address
+	// 3. How 2access(get) value pointed by pointers in Go?
+	// => The * operator, used 2access the value present in the memory address
 	// pointed by the pointer.
 
 	var age int = 24
