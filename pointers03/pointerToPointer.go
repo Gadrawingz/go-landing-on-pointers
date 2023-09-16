@@ -24,14 +24,14 @@ func main() {
 	fmt.Println(pointerOne)
 	fmt.Println(pointerTwo)
 
-	fmt.Printf("Value of variable myVariable: %d\n", myVariable)
-	fmt.Printf("Address of variable myVariable: %d\n", &myVariable)
-	fmt.Printf("Value of pointer pointerOne: %d\n", pointerOne)
-	fmt.Printf("Address of pointer pointerOne: %d\n", &pointerOne)
-	fmt.Printf("Value of pointer pointerTwo: %d\n", pointerTwo)
+	fmt.Printf("Value of variable myVariable: %d\n", myVariable)    // 240
+	fmt.Printf("Address of variable myVariable: %d\n", &myVariable) // 824633819528
+	fmt.Printf("Value of pointer pointerOne: %d\n", pointerOne)     // 824633819528
+	fmt.Printf("Address of pointer pointerOne: %d\n", &pointerOne)  // 824633794600
+	fmt.Printf("Value of pointer pointerTwo: %d\n", pointerTwo)     // 824633794600
 
 	// Dereferencing of pointers. Getting the value of X
-	fmt.Printf("Value of myVariable from pointerOne : %d\n", *pointerOne)
-	fmt.Printf("Value of myVariable from pointerTwo : %d\n", **pointerTwo)
+	fmt.Printf("Value of myVariable from pointerOne : %d\n", *pointerOne)  // 240
+	fmt.Printf("Value of myVariable from pointerTwo : %d\n", **pointerTwo) // 240
 
 }

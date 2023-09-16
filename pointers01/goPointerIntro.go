@@ -1,15 +1,36 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	fmt.Println("Getting on with Pointers!")
 
+	// WHAT IS POINTER?
+	// It is a variable that stores the memory address of another variable.
+	var XVariable int = 394
+	var XPointer *int = &XVariable
+	// Here, the variable 'XVariable' has value 394 and is stored at memory
+	// address '0xc0000be000'. The var XPointer holds the address of XVariable.
+	// Now XPointer is said to point to XVariable.
+	fmt.Println("XVariable's value:", XVariable)    // 394
+	fmt.Println("XVariable's address:", &XVariable) // 0xc0000be000
+	fmt.Println("XPointer.'s value:", XPointer)     // 0xc0000be000
+
 	// 1. Declaring Pointers
 	// *T is the type of the pointer variable w/c points to a value of type T.
 	// Variable declaration
+	var variable10 = "Wayne"
+	var variable20 = 58
+	var variable30 = 7.80
+	var pointer01 *string  // pointer variable of string type
+	var pointer02 *int     // pointer variable of complex type
+	var pointer03 *float64 // pointer variable of double type
+	pointer01 = &variable10
+	pointer02 = &variable20
+	pointer03 = &variable30
+	fmt.Println(pointer01)
+	fmt.Println(pointer02)
+	fmt.Println(pointer03)
 
 	// 2. Memory address
 	// When we create a variable, a memory address is allocated for the
